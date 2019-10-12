@@ -1,0 +1,209 @@
+<!-- MAIN Part -->
+<div class="container middle">
+    <div class="middle_inner">
+        <div class="page_form">
+            <form action="/" method="get">
+                <div class="form-group  form-inline">
+                    <div class="form_item form-inline">
+                        <label class="mr-sm-2">Date range</label>
+                        <div class='input-group date form-inline '>
+                            <input name="date_start" type='text' class="datepicker_item form-control" />
+                            <div class="input-group-addon">
+                                <span class="input-group-text icon icon-calendar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="line mr-sm-2 ml-sm-2"> — </span>
+                    <div class="form_item form-inline ">
+                        <label></label>
+                        <div class='input-group date form-inline'>
+                            <input name="date_end" type='text' class="datepicker_item form-control" />
+                            <div class="input-group-addon">
+                                <span class="input-group-text icon icon-calendar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="separator">
+                    </div>
+                    <div class="form_item form-inline">
+                        <label class="mr-md-2 ml-md-4">Transaction ID</label>
+                        <div class='input-group  form-inline'>
+                            <input name="transaction_id" type='text' class="transaction_item form-control" placeholder="Any"
+                            />
+                        </div>
+                    </div>
+                    <div class="form_item form-inline">
+                        <div class="ml-sm-4 form_submit form-inline">
+                            <button class="btn btn-primary">Show</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="inform_table_wrapper  tab-content " id="myTabContent">
+            <div class="table-responsive-sm tab-pane fade show active" id="unconfirmed" role="tabpanel">
+                <table class="table table-data">
+                    <thead>
+                        <tr>
+                            <th data-label="Transaction ID">Transaction ID</th>
+                            <th data-label="Date & time">Date & time</th>
+                            <th data-label="Order total">Order total</th>
+                            <th data-label="Description" colspan="2">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="1">1602-2815-0059-0242</td>
+                            <td data-th="2">28 Feb 2016 15:00:59</td>
+                            <td data-th="3">£49.50</td>
+                            <td data-th="4">Caterpillar boots SKU239200116</td>
+                            <td class="last">
+                                <select class="form-control" data-live-search="false" data-max-options="2" data-btn-class="btn-primary">
+                                    <option value="Refund">Refund</option>
+                                    <option value="Full">Full</option>
+                                    <option value="Partial">Partial</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="1">1602-2814-5938-8854</td>
+                            <td data-th="2">28 Feb 2016 14:59:38</td>
+                            <td data-th="3">£15.99</td>
+                            <td data-th="4">—</td>
+                            <td class="last">
+                                <select class="form-control" data-live-search="false" data-max-options="2" data-btn-class="btn-primary">
+                                    <option value="Refund">Refund</option>
+                                    <option value="Full">Full</option>
+                                    <option value="Partial">Partial</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="refunded">
+                            <td data-th="1">1602-2809-2720-2393</td>
+                            <td data-th="2">28 Feb 2016 09:27:20</td>
+                            <td data-th="3">£1,005.63</td>
+                            <td data-th="4">—</td>
+                            <td class="last">
+                                <select class="form-control" data-live-search="false" data-max-options="2" data-btn-class="btn-primary">
+                                    <option value="Refund">Refund</option>
+                                    <option value="Full">Full</option>
+                                    <option value="Partial">Partial</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="1">Partial refund</td>
+                            <td data-th="2">19 Feb 2016 18:05:15</td>
+                            <td class="refunded" data-th="3">−£77.50</td>
+                            <td data-th="4">Customer returned the Nike trainers</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td data-th="1">1602-1416-1508-5061</td>
+                            <td data-th="2">19 Feb 2016 18:05:15</td>
+                            <td data-th="3">£214.88</td>
+                            <td data-th="4">—</td>
+                            <td class="last">
+                                <select class="form-control" data-live-search="false" data-max-options="2" data-btn-class="btn-primary">
+                                    <option value="Refund">Refund</option>
+                                    <option value="Full">Full</option>
+                                    <option value="Partial">Partial</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="refunded full">
+                            <td data-th="1">1602-1918-0515-1177</td>
+                            <td data-th="2">01 Mar 2016 12:02:42</td>
+                            <td data-th="3">£60.12</td>
+                            <td data-th="4">—</td>
+                            <td class="last">Refunded</td>
+                        </tr>
+                        <tr>
+                            <td data-th="1">Full refund</td>
+                            <td data-th="2">19 Feb 2016 18:05:15</td>
+                            <td class="refunded" data-th="3">−£214.88</td>
+                            <td data-th="4">—</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <nav>
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">«</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link " href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">»</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="table-responsive-sm tab-pane fade show" id="history" role="tabpanel">
+                <table class="table js-table-data">
+                    <thead>
+                        <tr>
+                            <th data-label="Transaction ID">Transaction ID</th>
+                            <th data-label="Date & time">Date & time</th>
+                            <th data-label="Order total">Order total</th>
+                            <th data-label="Description" colspan="2">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="1">1602-2815-0059-0242</td>
+                            <td data-th="2">28 Feb 2016 15:00:59</td>
+                            <td data-th="3">£49.50</td>
+                            <td data-th="4">Caterpillar boots SKU239200116</td>
+                            <td class="last">
+                                <select class="form-control" data-live-search="false" data-max-options="2" data-btn-class="btn-primary">
+                                    <option value="Refund">Refund</option>
+                                    <option value="Full">Full</option>
+                                    <option value="Partial">Partial</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-th="1">1602-2814-5938-8854</td>
+                            <td data-th="2">28 Feb 2016 14:59:38</td>
+                            <td data-th="3">£15.99</td>
+                            <td data-th="4">—</td>
+                            <td class="last">
+                                <select class="form-control" data-live-search="false" data-max-options="2" data-btn-class="btn-primary">
+                                    <option value="Refund">Refund</option>
+                                    <option value="Full">Full</option>
+                                    <option value="Partial">Partial</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="refunded">
+                            <td data-th="1">1602-2809-2720-2393</td>
+                            <td data-th="2">28 Feb 2016 09:27:20</td>
+                            <td data-th="3">£1,005.63</td>
+                            <td data-th="4">—</td>
+                            <td class="last">
+                                <select class="form-control" data-live-search="false" data-max-options="2" data-btn-class="btn-primary">
+                                    <option value="Refund">Refund</option>
+                                    <option value="Full">Full</option>
+                                    <option value="Partial">Partial</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

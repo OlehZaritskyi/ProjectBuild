@@ -1,0 +1,23 @@
+/* Bootstrap styles */
+@import "../../bower_components/bootstrap/scss/normalize";
+@import "../../bower_components/bootstrap/scss/bootstrap-reboot";
+@import "../../bower_components/bootstrap/scss/grid";
+@import "../../bower_components/bootstrap/scss/buttons";
+@import "../../bower_components/bootstrap/scss/nav";
+@import "../../bower_components/bootstrap/scss/navbar";
+@import "../../bower_components/bootstrap/scss/forms";
+@import "../../bower_components/bootstrap/scss/input-group";
+@import "../../bower_components/bootstrap/scss/dropdown";
+@import "../../bower_components/bootstrap/scss/card";
+@import "../../bower_components/bootstrap/scss/utilities";
+@import "../../bower_components/bootstrap/scss/pagination";
+@import "../../bower_components/bootstrap/scss/tables";
+@import "../../bower_components/bootstrap-select/scss/select";
+@import "../../bower_components/bootstrap/scss/datepicker";
+
+/* Adds styles */
+@import "../assets/font-awesome/scss/font-awesome";
+
+/* My styles */
+@import "./modules/fonts";
+@import "./modules/module";
