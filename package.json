@@ -9,7 +9,7 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-changed": "^3.1.0",
     "gulp-clean-css": "^3.10.0",
-    "gulp-connect": "^5.0.0",
+    "gulp-connect": "^5.7.0",
     "gulp-embed-svg": "^1.0.2",
     "gulp-imagemin": "^3.3.0",
     "gulp-minify": "^3.1.0",
